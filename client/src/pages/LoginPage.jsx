@@ -42,7 +42,8 @@ export default function LoginPage() {
               id="username"
               name="username"
               className="form-control"
-              autoComplete="off"
+              aria-label="Username"
+              autoComplete="on"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />

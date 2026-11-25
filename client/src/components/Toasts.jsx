@@ -26,7 +26,7 @@ function Toast({ toast }) {
 export default function Toasts() {
   const toasts = useSelector((state) => state.ui.toasts);
   return (
-    <div className="app-toasts">
+    <div className="app-toasts" aria-live="assertive">
       {toasts.map((toast) => (
         <Toast key={toast.id} toast={toast} />
       ))}

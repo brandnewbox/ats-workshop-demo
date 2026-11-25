@@ -14,7 +14,8 @@ exports[`login > keeps the login form markup the same 1`] = `
       Username
     </label>
     <input
-      autocomplete="off"
+      aria-label="Username"
+      autocomplete="on"
       class="form-control"
       id="username"
       name="username"
