@@ -49,7 +49,7 @@ Then open a new terminal (the **+** in the terminal panel) and type `opencode`. 
 
 ## The agent
 
-Type `opencode` in the terminal. It uses your workshop key (see "Get your key"). The default model is **GLM 5.3** (`z-ai/glm-5.3`). To change the model, type `/models` in opencode: **Claude Sonnet 5.5** (stronger, costs more), **Claude Haiku 5.5** (cheap), or the **Free Models Router** (costs nothing, but it is slow and changes the model at random). All models except the free router use money from your key. The project instructions for the agent are in [AGENTS.md](AGENTS.md). The accessibility audit skill is in `.opencode/skills/accessibility-audit/`.
+Type `opencode` in the terminal. It uses your workshop key (see "Get your key"). The default model is **DeepSeek V4.1 Flash** (`deepseek/deepseek-v4.1-flash-1017`). To change the model, type `/models` in opencode: **GLM 5.3**, **Claude Sonnet 5.5** (stronger, costs more), **Claude Haiku 5.5** (cheap), or the **Free Models Router** (costs nothing, but it is slow and changes the model at random). All models except the free router use money from your key. The project instructions for the agent are in [AGENTS.md](AGENTS.md). The accessibility audit skill is in `.opencode/skills/accessibility-audit/`.
 
 ## Stack
 
