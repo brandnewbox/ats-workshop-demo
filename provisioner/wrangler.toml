@@ -15,7 +15,7 @@ KEY_LIMIT_USD = "5"
 KEY_EXPIRES_AT = "2026-12-01T06:00:00Z"
 KEY_NAME_PREFIX = "ats-workshop-"
 # No new keys after this many (the people, plus a few spares).
-MAX_KEYS = "45"
+MAX_KEYS = "60"
 # Calls to /key for each GitHub login in an hour.
 RATE_LIMIT_PER_HOUR = "10"
 # Wrong event codes in an hour, for each GitHub login and for each IP address.
