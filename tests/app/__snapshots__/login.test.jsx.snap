@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`login > keeps the login form markup the same 1`] = `
+<form
+  novalidate=""
+>
+  <div
+    class="mb-3"
+  >
+    <label
+      class="form-label"
+      for="username"
+    >
+      Username
+    </label>
+    <input
+      autocomplete="off"
+      class="form-control"
+      id="username"
+      name="username"
+      value=""
+    />
+  </div>
+  <div
+    class="mb-3"
+  >
+    <label
+      class="form-label"
+      for="password"
+    >
+      Password
+    </label>
+    <input
+      class="form-control"
+      id="password"
+      name="password"
+      type="password"
+      value=""
+    />
+  </div>
+  <button
+    class="btn btn-primary w-100"
+    type="submit"
+  >
+    Sign In
+  </button>
+</form>
+`;

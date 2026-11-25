@@ -1,0 +1,742 @@
+[
+  {
+    "id": 1,
+    "subjectId": 1,
+    "grade": 4,
+    "title": "Grade 4 ELA Practice",
+    "minutes": 15,
+    "calculator": false,
+    "questions": [
+      {
+        "passage": { "ref": "fox-and-grapes" },
+        "stem": "Why did the Fox jump at the wall?",
+        "options": [
+          "He wanted to see over it.",
+          "He wanted to eat the grapes.",
+          "He was running from a dog.",
+          "He was playing a game."
+        ],
+        "answer": 1
+      },
+      {
+        "passage": { "ref": "fox-and-grapes" },
+        "stem": "What does the Fox say when he walks away?",
+        "options": [
+          "The grapes are too high.",
+          "He will come back tomorrow.",
+          "The grapes are sour.",
+          "He is not hungry now."
+        ],
+        "answer": 2
+      },
+      {
+        "passage": { "ref": "fox-and-grapes" },
+        "stem": "Which sentence tells the lesson of the fable?",
+        "options": [
+          "It is easy to say you do not want what you cannot get.",
+          "Foxes do not like fruit.",
+          "Hot days make animals tired.",
+          "Always ask a friend for help."
+        ],
+        "answer": 0
+      },
+      {
+        "passage": { "ref": "crow-and-pitcher" },
+        "stem": "What problem does the Crow have?",
+        "options": [
+          "The pitcher is broken.",
+          "She cannot find any water.",
+          "Her beak cannot reach the water.",
+          "Another bird takes the water."
+        ],
+        "answer": 2
+      },
+      {
+        "passage": { "ref": "crow-and-pitcher" },
+        "stem": "What does the Crow put into the pitcher?",
+        "options": [
+          "Leaves",
+          "Pebbles",
+          "Sticks",
+          "Sand"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": { "ref": "crow-and-pitcher" },
+        "stem": "Which word best describes the Crow?",
+        "options": [
+          "Lazy",
+          "Angry",
+          "Clever",
+          "Afraid"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "subjectId": 1,
+    "grade": 10,
+    "title": "Grade 10 ELA Practice",
+    "minutes": 25,
+    "calculator": false,
+    "questions": [
+      {
+        "passage": { "ref": "gettysburg-address" },
+        "stem": "How many years is \"four score and seven\"?",
+        "options": [
+          "47",
+          "67",
+          "87",
+          "107"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": { "ref": "gettysburg-address" },
+        "stem": "What is the speaker's purpose in the second paragraph?",
+        "options": [
+          "To describe the weather on the battlefield",
+          "To explain why the crowd has gathered",
+          "To list the names of the soldiers",
+          "To ask for money for the war"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": { "ref": "gettysburg-address" },
+        "stem": "Which device does the speaker use in \"we can not dedicate—we can not consecrate—we can not hallow\"?",
+        "options": [
+          "Repetition",
+          "Simile",
+          "Flashback",
+          "Personification"
+        ],
+        "answer": 0
+      },
+      {
+        "passage": { "ref": "gettysburg-address" },
+        "stem": "According to the speaker, who has already consecrated the ground?",
+        "options": [
+          "The people in the crowd",
+          "The speaker himself",
+          "The brave men who struggled there",
+          "The newspapers of the world"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": { "ref": "gettysburg-address" },
+        "stem": "In the speech, what does \"detract\" most nearly mean?",
+        "options": [
+          "To add to",
+          "To take away from",
+          "To build again",
+          "To write about"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": { "ref": "gettysburg-address" },
+        "stem": "What task does the speaker give to \"us the living\"?",
+        "options": [
+          "To build a monument on the field",
+          "To forget the war",
+          "To finish the unfinished work",
+          "To leave the battlefield"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": { "ref": "ant-and-grasshopper" },
+        "stem": "What does the Ant carry every day?",
+        "options": [
+          "A leaf",
+          "A grain of corn",
+          "A seed of wheat",
+          "A drop of water"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": { "ref": "ant-and-grasshopper" },
+        "stem": "How does the Grasshopper respond to the Ant's advice?",
+        "options": [
+          "He thanks her.",
+          "He laughs.",
+          "He starts to work.",
+          "He moves away."
+        ],
+        "answer": 1
+      },
+      {
+        "passage": { "ref": "ant-and-grasshopper" },
+        "stem": "Which theme fits the fable best?",
+        "options": [
+          "Prepare today for the needs of tomorrow.",
+          "Music makes hard work easy.",
+          "Small animals are stronger than large ones.",
+          "Never trust a stranger."
+        ],
+        "answer": 0
+      },
+      {
+        "passage": { "ref": "ant-and-grasshopper" },
+        "stem": "How is the structure of this fable similar to the structure of the speech?",
+        "options": [
+          "Both end with a lesson or a call to act.",
+          "Both are told by an animal.",
+          "Both take place in winter.",
+          "Both are written as poems."
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "subjectId": 2,
+    "grade": 6,
+    "title": "Grade 6 Math Practice",
+    "minutes": 20,
+    "calculator": false,
+    "questions": [
+      {
+        "passage": "Maya buys 3 notebooks. Each notebook costs $2.50.",
+        "stem": "How much does Maya pay for the notebooks?",
+        "options": [
+          "$5.00",
+          "$6.50",
+          "$7.50",
+          "$8.00"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "A recipe uses 2 cups of flour for every 3 cups of oats.",
+        "stem": "How many cups of flour go with 9 cups of oats?",
+        "options": [
+          "4",
+          "6",
+          "8",
+          "12"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "The ratio of red tiles to blue tiles in a pattern is 4 : 5.",
+        "stem": "There are 20 red tiles. How many blue tiles are there?",
+        "options": [
+          "16",
+          "20",
+          "24",
+          "25"
+        ],
+        "answer": 3
+      },
+      {
+        "passage": "Solve for x.",
+        "stem": "What is x in the equation x + 7 = 15?",
+        "options": [
+          "7",
+          "8",
+          "15",
+          "22"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "A rectangle is 6 cm long and 4 cm wide.",
+        "stem": "What is the area of the rectangle?",
+        "options": [
+          "10 square cm",
+          "20 square cm",
+          "24 square cm",
+          "48 square cm"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "Write the fraction as a decimal.",
+        "stem": "Which decimal is equal to 3/4?",
+        "options": [
+          "0.34",
+          "0.43",
+          "0.70",
+          "0.75"
+        ],
+        "answer": 3
+      },
+      {
+        "passage": "The temperature at 6 a.m. was -4 degrees. By noon it was 9 degrees warmer.",
+        "stem": "What was the temperature at noon?",
+        "options": [
+          "-13 degrees",
+          "-5 degrees",
+          "5 degrees",
+          "13 degrees"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "The data set is 3, 5, 5, 7, 10.",
+        "stem": "What is the mean of the data set?",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "10"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "subjectId": 2,
+    "grade": 8,
+    "title": "Grade 8 Math Practice",
+    "minutes": 20,
+    "calculator": true,
+    "questions": [
+      {
+        "passage": "Solve the equation. You may use the calculator.",
+        "stem": "What is x if 3x - 5 = 16?",
+        "options": [
+          "5",
+          "7",
+          "9",
+          "11"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "A line passes through the points (0, 2) and (4, 10).",
+        "stem": "What is the slope of the line?",
+        "options": [
+          "1/2",
+          "2",
+          "4",
+          "8"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "A right triangle has legs of 9 m and 12 m.",
+        "stem": "How long is the hypotenuse?",
+        "options": [
+          "15 m",
+          "18 m",
+          "21 m",
+          "108 m"
+        ],
+        "answer": 0
+      },
+      {
+        "passage": "Write the number in scientific notation.",
+        "stem": "Which is 0.00052 in scientific notation?",
+        "options": [
+          "5.2 × 10^4",
+          "5.2 × 10^-3",
+          "5.2 × 10^-4",
+          "52 × 10^-5"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "A cylinder has a radius of 3 in and a height of 10 in. Use 3.14 for pi.",
+        "stem": "What is the volume of the cylinder, to the nearest cubic inch?",
+        "options": [
+          "94",
+          "188",
+          "283",
+          "942"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "The function is y = 2x + 1.",
+        "stem": "What is y when x = -3?",
+        "options": [
+          "-7",
+          "-5",
+          "5",
+          "7"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "A phone plan costs $20 a month plus $0.10 for each text message.",
+        "stem": "Which equation gives the cost C for t text messages?",
+        "options": [
+          "C = 20t + 0.10",
+          "C = 0.10t + 20",
+          "C = 20.10t",
+          "C = 20 - 0.10t"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Solve the system: y = x + 2 and y = 3x - 4.",
+        "stem": "What is the solution of the system?",
+        "options": [
+          "(1, 3)",
+          "(2, 4)",
+          "(3, 5)",
+          "(4, 6)"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "subjectId": 4,
+    "grade": 4,
+    "title": "Grade 4 Science Practice",
+    "minutes": 15,
+    "calculator": false,
+    "questions": [
+      {
+        "passage": "Plants need some things from their environment to grow.",
+        "stem": "What do green plants use to make their own food?",
+        "options": [
+          "Sunlight",
+          "Soil only",
+          "Rocks",
+          "Moonlight"
+        ],
+        "answer": 0
+      },
+      {
+        "passage": "Water can be a solid, a liquid, or a gas.",
+        "stem": "What happens to an ice cube on a warm table?",
+        "options": [
+          "It becomes a gas at once.",
+          "It melts into a liquid.",
+          "It gets bigger.",
+          "It stays the same."
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Animals have body parts that help them live.",
+        "stem": "What helps a fish breathe under water?",
+        "options": [
+          "Fins",
+          "Scales",
+          "Gills",
+          "A tail"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "A student rolls a ball on carpet and on a wood floor.",
+        "stem": "On which surface will the ball roll farther?",
+        "options": [
+          "Carpet, because it is soft",
+          "Wood, because it has less friction",
+          "Carpet, because it has more friction",
+          "Both the same distance"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Wind and water can change land over time.",
+        "stem": "What is the name for the slow wearing away of rock by water?",
+        "options": [
+          "Erosion",
+          "Melting",
+          "Freezing",
+          "Growing"
+        ],
+        "answer": 0
+      },
+      {
+        "passage": "Some materials let electricity pass through them.",
+        "stem": "Which object is a good conductor of electricity?",
+        "options": [
+          "A rubber band",
+          "A wooden spoon",
+          "A plastic cup",
+          "A copper wire"
+        ],
+        "answer": 3
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "subjectId": 4,
+    "grade": 8,
+    "title": "Grade 8 Science Practice",
+    "minutes": 20,
+    "calculator": false,
+    "questions": [
+      {
+        "passage": "Cells are the basic units of living things.",
+        "stem": "Which cell part controls what goes in and out of the cell?",
+        "options": [
+          "Nucleus",
+          "Cell membrane",
+          "Mitochondria",
+          "Ribosome"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "A car travels 150 km in 3 hours.",
+        "stem": "What is the average speed of the car?",
+        "options": [
+          "30 km/h",
+          "50 km/h",
+          "150 km/h",
+          "450 km/h"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Matter is made of atoms.",
+        "stem": "Which particle has a negative charge?",
+        "options": [
+          "Proton",
+          "Neutron",
+          "Electron",
+          "Nucleus"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "The Moon goes around the Earth about once a month.",
+        "stem": "What causes the phases of the Moon?",
+        "options": [
+          "The shadow of the Earth",
+          "Clouds in front of the Moon",
+          "How much of the lit half we see",
+          "The Moon makes its own light"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "Energy can change from one form to another.",
+        "stem": "What energy change happens in a battery-powered flashlight?",
+        "options": [
+          "Chemical to light",
+          "Light to chemical",
+          "Sound to heat",
+          "Heat to chemical"
+        ],
+        "answer": 0
+      },
+      {
+        "passage": "Traits pass from parents to offspring.",
+        "stem": "What carries genetic information in a cell?",
+        "options": [
+          "Water",
+          "DNA",
+          "Sugar",
+          "Salt"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "A food chain: grass → rabbit → fox.",
+        "stem": "Which organism in the chain is a producer?",
+        "options": [
+          "Rabbit",
+          "Fox",
+          "Grass",
+          "None of them"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "subjectId": 3,
+    "grade": 6,
+    "title": "Grade 6 Social Studies Practice",
+    "minutes": 15,
+    "calculator": false,
+    "questions": [
+      {
+        "passage": "Maps use symbols and directions.",
+        "stem": "Which direction is opposite of east?",
+        "options": [
+          "North",
+          "South",
+          "West",
+          "Up"
+        ],
+        "answer": 2
+      },
+      {
+        "passage": "Early people settled near rivers.",
+        "stem": "Why did early farmers settle near rivers?",
+        "options": [
+          "Rivers gave water for crops.",
+          "Rivers kept animals away.",
+          "Rivers made the land dry.",
+          "Rivers were easy to hide in."
+        ],
+        "answer": 0
+      },
+      {
+        "passage": "Ancient Egypt grew along one long river.",
+        "stem": "Which river was at the center of life in ancient Egypt?",
+        "options": [
+          "Amazon",
+          "Nile",
+          "Mississippi",
+          "Danube"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "People trade goods and services.",
+        "stem": "What is it called when people exchange goods without money?",
+        "options": [
+          "Taxes",
+          "Barter",
+          "Banking",
+          "Saving"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Governments make rules for a community.",
+        "stem": "What is a democracy?",
+        "options": [
+          "Rule by one king",
+          "Rule by the people",
+          "Rule by the army",
+          "Rule by one family"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Lines on a globe help us find places.",
+        "stem": "Which line divides the Earth into the Northern and Southern Hemispheres?",
+        "options": [
+          "The Prime Meridian",
+          "The equator",
+          "The Tropic of Cancer",
+          "The Arctic Circle"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "subjectId": 3,
+    "grade": 10,
+    "title": "Grade 10 Social Studies Practice",
+    "minutes": 25,
+    "calculator": false,
+    "questions": [
+      {
+        "passage": "The United States Constitution separates the powers of government.",
+        "stem": "Which branch of government makes the laws?",
+        "options": [
+          "Executive",
+          "Legislative",
+          "Judicial",
+          "Military"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "The Bill of Rights is the first part of the amendments to the Constitution.",
+        "stem": "How many amendments are in the Bill of Rights?",
+        "options": [
+          "5",
+          "10",
+          "13",
+          "27"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Each branch can limit the power of the other branches.",
+        "stem": "What is the name for this system?",
+        "options": [
+          "Checks and balances",
+          "Federalism",
+          "Popular sovereignty",
+          "Free enterprise"
+        ],
+        "answer": 0
+      },
+      {
+        "passage": "Supply and demand affect prices in a market.",
+        "stem": "If demand for a product goes up and supply stays the same, what usually happens to the price?",
+        "options": [
+          "It goes down.",
+          "It goes up.",
+          "It stays the same.",
+          "It goes to zero."
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "The Kansas-Nebraska Act was passed in 1854.",
+        "stem": "What did the act let settlers in those territories decide by vote?",
+        "options": [
+          "The state capital",
+          "Whether to allow slavery",
+          "The tax rate",
+          "The state flag"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "The Industrial Revolution changed how goods were made.",
+        "stem": "Which change was part of the Industrial Revolution?",
+        "options": [
+          "Goods made by hand at home",
+          "Goods made by machines in factories",
+          "Fewer people living in cities",
+          "Less use of coal"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Citizens have both rights and responsibilities.",
+        "stem": "Which is a responsibility of a citizen, not a right?",
+        "options": [
+          "Freedom of speech",
+          "Serving on a jury",
+          "Freedom of religion",
+          "The right to a fair trial"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "Maps can show where people live.",
+        "stem": "What does a population density map show?",
+        "options": [
+          "How high the land is",
+          "How many people live in an area",
+          "Where the rivers are",
+          "The average rainfall"
+        ],
+        "answer": 1
+      },
+      {
+        "passage": "The Nineteenth Amendment was ratified in 1920.",
+        "stem": "What right did the Nineteenth Amendment protect?",
+        "options": [
+          "The right of women to vote",
+          "The right to bear arms",
+          "Freedom of the press",
+          "The end of slavery"
+        ],
+        "answer": 0
+      }
+    ]
+  }
+]

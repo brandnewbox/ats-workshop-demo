@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "studentId": 1,
+    "testId": 5,
+    "minutes": 15,
+    "startedAt": "2026-09-30T14:05:00Z",
+    "submittedAt": "2026-09-30T14:17:00Z",
+    "correct": [1, 2, 3, 5],
+    "flagged": [4],
+    "survey": "just-right"
+  },
+  {
+    "id": 2,
+    "studentId": 1,
+    "testId": 2,
+    "minutes": 25,
+    "startedAt": "2026-10-02T15:00:00Z",
+    "submittedAt": "2026-10-02T15:21:00Z",
+    "correct": [1, 2, 3, 4, 6, 7, 9],
+    "flagged": [5, 10],
+    "survey": "hard"
+  },
+  {
+    "id": 3,
+    "studentId": 1,
+    "testId": 8,
+    "minutes": 25,
+    "startedAt": "2026-10-14T13:30:00Z",
+    "submittedAt": "2026-10-14T13:52:00Z",
+    "correct": [1, 2, 3, 4, 6, 9],
+    "flagged": [],
+    "survey": null
+  },
+  {
+    "id": 4,
+    "studentId": 2,
+    "testId": 4,
+    "minutes": 30,
+    "startedMinutesAgo": 6,
+    "submittedAt": null,
+    "answered": { "1": 1, "2": 1, "3": 0 },
+    "flagged": [2]
+  }
+]

@@ -1,0 +1,622 @@
+/* Prairie Practice styles. Bootstrap 5 is loaded first (see main.jsx). */
+
+:root {
+  --pp-blue: #1d4ed8;
+  --pp-blue-dark: #1e3a8a;
+  --pp-page: #eef4fb;
+  --pp-focus: #1d4ed8;
+  --bs-link-color: #0a58ca;
+  --bs-link-color-rgb: 10, 88, 202;
+}
+
+body {
+  background: var(--pp-page);
+}
+
+/* Focus ring for every control. The #root prefix wins over Bootstrap's own focus styles. */
+#root :focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+/* ---------- Header ---------- */
+
+.app-header {
+  background: var(--pp-blue-dark);
+  color: #fff;
+}
+
+.app-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.5rem;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.app-nav ul {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app-nav a,
+.nav-sign-out {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  background: none;
+  border: 0;
+}
+
+.app-nav img {
+  filter: invert(1);
+}
+
+.app-nav a.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.app-nav a:hover,
+.nav-sign-out:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#root .app-header :focus-visible {
+  outline-color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .app-nav {
+    display: none;
+  }
+}
+
+/* ---------- Toasts ---------- */
+
+.app-toasts {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1080;
+  max-width: calc(100vw - 2rem);
+}
+
+.app-toast {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 16rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.app-toast-error {
+  background: #e74d3c;
+}
+
+.app-toast-success {
+  background: #146c43;
+}
+
+.app-toast-message {
+  flex: 1;
+}
+
+.app-toast-close {
+  background: none;
+  border: 0;
+  color: inherit;
+}
+
+/* ---------- Login ---------- */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--pp-page);
+}
+
+.login-card {
+  background: #fff;
+  width: 100%;
+  max-width: 24rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+  font-size: 1.75rem;
+  margin-top: 0.75rem;
+}
+
+.login-intro,
+.login-help {
+  color: #495057;
+}
+
+.login-help {
+  font-size: 0.875rem;
+  margin: 1rem 0 0;
+}
+
+#root .login-page .form-control:focus {
+  outline-color: #ffff00;
+}
+
+/* ---------- Home ---------- */
+
+.greeting {
+  margin-bottom: 1.5rem;
+}
+
+.greeting-title {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.greeting-subtitle {
+  display: block;
+  color: #495057;
+}
+
+.home-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.home-card {
+  flex: 0 0 320px;
+}
+
+/* ---------- Practice ---------- */
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.filter-row {
+  margin-bottom: 1rem;
+}
+
+.filter-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.subject-filters,
+.grade-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  background: #fff;
+  border: 1px solid #6c757d;
+  color: #212529;
+}
+
+.filter-btn.active {
+  font-weight: 700;
+  border-color: var(--pp-blue);
+  border-width: 2px;
+}
+
+@media (max-width: 575.98px) {
+  .subject-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .subject-filters .filter-btn {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+}
+
+.test-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.test-card-title {
+  font-size: 1.25rem;
+}
+
+.test-card-meta {
+  color: #495057;
+}
+
+#root .test-card .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* ---------- Test screens ---------- */
+
+.test-layout {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.directions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.directions-list li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.directions-actions,
+.review-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.test-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  .test-screen {
+    transform: scale(1.2);
+    transform-origin: top left;
+  }
+}
+
+.test-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--pp-blue-dark);
+  color: #fff;
+}
+
+.test-title {
+  font-weight: 600;
+}
+
+.test-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: #f1f3f5;
+  border-bottom: 1px solid #ced4da;
+}
+
+.tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 0.375rem;
+  color: #212529;
+  text-decoration: none;
+}
+
+.tool-btn.tool-active {
+  border-color: #0d6efd;
+}
+
+.flag-btn {
+  margin-left: auto;
+}
+
+#root .tool-btn:focus {
+  outline: none;
+}
+
+.calculator {
+  max-width: 16rem;
+  margin: 0.5rem 1rem;
+}
+
+.calculator-display {
+  display: block;
+  text-align: right;
+  font-family: monospace;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ced4da;
+  margin-bottom: 0.5rem;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.25rem;
+}
+
+.calculator-clear {
+  grid-column: span 4;
+}
+
+.test-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.passage,
+.question-panel {
+  min-width: 18rem;
+}
+
+.passage {
+  white-space: pre-line;
+  border-right: 1px solid #dee2e6;
+  padding-right: 1.5rem;
+}
+
+.passage.tool-highlighter {
+  cursor: text;
+}
+
+.passage.tool-highlighter ::selection {
+  background: #fde047;
+}
+
+.passage.tool-line-reader p {
+  background: linear-gradient(#fff 0 0) padding-box;
+  outline: 1px dashed #adb5bd;
+}
+
+.stem {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.option .form-check-input {
+  margin: 0;
+}
+
+.option-selected {
+  border-color: var(--pp-blue);
+  background: #eff6ff;
+}
+
+.option-crossed .option-text {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.option-cross {
+  margin-left: auto;
+}
+
+.test-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #dee2e6;
+  background: #f8f9fa;
+}
+
+.question-strip {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.question-strip ol {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.strip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  min-width: 2.25rem;
+  height: 2.25rem;
+  justify-content: center;
+  border: 1px solid #adb5bd;
+  border-radius: 0.375rem;
+  background: #fff;
+}
+
+.strip-current {
+  border: 2px solid var(--pp-blue);
+  font-weight: 700;
+}
+
+/* ---------- Review ---------- */
+
+.review-grid {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.5rem;
+}
+
+.review-item {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #adb5bd;
+  border-radius: 0.375rem;
+  color: #212529;
+  text-decoration: none;
+}
+
+.review-number {
+  display: block;
+  font-weight: 600;
+}
+
+.review-answered {
+  background: #e7f5ee;
+}
+
+.review-flagged {
+  border-color: #b45309;
+  border-width: 2px;
+}
+
+.survey {
+  max-width: 28rem;
+}
+
+.survey-question {
+  font-weight: 600;
+}
+
+/* ---------- Results ---------- */
+
+.result-chart {
+  display: block;
+  border: 1px solid #dee2e6;
+  margin: 1rem 0;
+  background: #fff;
+}
+
+.result-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.result-filter {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- Supports ---------- */
+
+.support-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.support-item .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.support-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.support-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #6c757d;
+  border-radius: 0.25rem;
+  background: #fff;
+}
+
+.support-on .support-switch {
+  border-color: #198754;
+  background: #d1e7dd;
+}
+
+.support-text {
+  margin: 0;
+  color: #495057;
+}
+
+#root .support-toggle:focus {
+  outline: 3px solid #ffff00;
+}
+
+.parent-email {
+  max-width: 24rem;
+}
+
+/* Darker blue for outline buttons, for text contrast on the page background. */
+.btn-outline-primary {
+  --bs-btn-color: #0a58ca;
+  --bs-btn-border-color: #0a58ca;
+}

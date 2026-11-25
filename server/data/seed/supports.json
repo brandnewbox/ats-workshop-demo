@@ -1,0 +1,11 @@
+[
+  { "studentId": 1 },
+  {
+    "studentId": 2,
+    "readAloud": true,
+    "extraTime": true,
+    "highContrast": true,
+    "parentEmail": "jordan.parent@example.com"
+  },
+  { "studentId": 3, "magnifier": true, "readingColour": "plum", "fontSize": "large" }
+]

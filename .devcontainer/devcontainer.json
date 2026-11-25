@@ -1,0 +1,35 @@
+{
+  "name": "Prairie Practice",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
+  // The smallest machine is enough: 2 cores (8 GB RAM in Codespaces). The app, the tests and opencode
+  // together peak at about 2.2 GB (measured with a 4 GB memory limit). GitHub then offers 2-core as the default.
+  "hostRequirements": { "cpus": 2, "memory": "4gb" },
+
+  // Prebuilds run these two. Pin opencode, so every Codespace has the same version.
+  "onCreateCommand": "npm i -g opencode-ai@1.19.6",
+  "updateContentCommand": "npm ci && npx playwright install --with-deps chromium && npm run seed",
+  // Runs when a person's Codespace starts (not in the prebuild).
+  "postCreateCommand": "cp -n .env.example .env",
+  "containerEnv": {
+    // The key service that `npm run workshop-key` calls (provisioner/, deployed by
+    // .github/workflows/deploy-key-service.yml).
+    "WORKSHOP_KEY_URL": "https://ats-workshop-keys.willtcarey-8a6.workers.dev"
+  },
+
+  "forwardPorts": [5173, 3001],
+  "portsAttributes": {
+    "5173": { "label": "Prairie Practice", "onAutoForward": "openPreview" },
+    "3001": { "label": "API", "onAutoForward": "silent" }
+  },
+
+  // Optional. The key service gives each person a key. Set this secret only if Will gives you a key by hand.
+  "secrets": {
+    "OPENROUTER_API_KEY": { "description": "Optional: only if Will gives you a key by hand" }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "ms-playwright.playwright"]
+    }
+  }
+}

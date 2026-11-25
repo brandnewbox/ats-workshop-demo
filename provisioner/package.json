@@ -1,0 +1,17 @@
+{
+  "name": "ats-workshop-key-provisioner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloudflare Worker: gives each workshop Codespace its own OpenRouter key.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.8.5",
+    "vitest": "~4.1",
+    "wrangler": "^4.165.0"
+  }
+}
