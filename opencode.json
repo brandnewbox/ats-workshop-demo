@@ -7,9 +7,6 @@
   "autoupdate": false,
   "provider": {
     "openrouter": {
-      "options": {
-        "apiKey": "{env:OPENROUTER_API_KEY}"
-      },
       "models": {
         "deepseek/deepseek-v4.1-flash-1017": {
           "name": "DeepSeek V4.1 Flash (workshop default)"

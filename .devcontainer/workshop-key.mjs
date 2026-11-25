@@ -1,8 +1,10 @@
 // `npm run workshop-key`: gets this Codespace's OpenRouter key from the workshop key service (provisioner/).
 //
 // It asks for the event code (not needed if this GitHub account has a key already, for example after a
-// rebuild), saves the key in ~/.config/ats-workshop/openrouter.env, and adds one line to ~/.bashrc and
-// ~/.zshrc so that new terminals have OPENROUTER_API_KEY. opencode reads that variable.
+// rebuild), and saves the key where opencode reads it: opencode's auth file
+// (~/.local/share/opencode/auth.json), so it works at once, in the same terminal. It also saves it in
+// ~/.config/ats-workshop/openrouter.env and adds one line to ~/.bashrc and ~/.zshrc, so that new terminals
+// have OPENROUTER_API_KEY too.
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
@@ -10,12 +12,28 @@ import { createInterface } from 'node:readline';
 
 const DIR = join(homedir(), '.config', 'ats-workshop');
 const KEY_FILE = join(DIR, 'openrouter.env');
-const NEW_TERMINAL = 'Open a new terminal (the + in the terminal panel), then type:  opencode';
+const NEXT = 'Now type:  opencode';
 const AGAIN = 'To try again, type:  npm run workshop-key';
 
 const say = (...lines) => console.log(['', ...lines.map((l) => `  ${l}`), ''].join('\n'));
 
+// opencode's own store of provider keys (what `opencode auth login` writes). Other entries stay.
+function saveForOpencode(key) {
+  const dir = join(process.env.XDG_DATA_HOME || join(homedir(), '.local', 'share'), 'opencode');
+  const path = join(dir, 'auth.json');
+  let auth = {};
+  try {
+    auth = JSON.parse(readFileSync(path, 'utf8'));
+  } catch {
+    auth = {};
+  }
+  auth.openrouter = { type: 'api', key };
+  mkdirSync(dir, { recursive: true, mode: 0o700 });
+  writeFileSync(path, `${JSON.stringify(auth, null, 2)}\n`, { mode: 0o600 });
+}
+
 function saveKey(key) {
+  saveForOpencode(key);
   mkdirSync(DIR, { recursive: true, mode: 0o700 });
   writeFileSync(KEY_FILE, `export OPENROUTER_API_KEY='${key.replaceAll("'", '')}'\n`, { mode: 0o600 });
   const line = `[ -z "$OPENROUTER_API_KEY" ] && [ -f "${KEY_FILE}" ] && . "${KEY_FILE}"`;
@@ -49,7 +67,7 @@ async function requestKey(code) {
 
 function done(result) {
   saveKey(result.key);
-  say(`✓ Workshop key ready (${result.name}, $${result.limit} limit).`, NEW_TERMINAL);
+  say(`✓ Workshop key ready (${result.name}, $${result.limit} limit).`, NEXT);
   process.exit(0);
 }
 

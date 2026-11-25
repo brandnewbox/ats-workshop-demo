@@ -45,7 +45,7 @@ It asks for the **event code**. Type the code that Will gives you and press Ente
 ✓ Workshop key ready (ats-workshop-<your GitHub username>, $5 limit).
 ```
 
-Then open a new terminal (the **+** in the terminal panel) and type `opencode`. If you rebuild the Codespace, run `npm run workshop-key` again: you get the same key, with no code. If you see `✗`, read the message, try again, or ask Will.
+Then type `opencode` (in the same terminal). If you rebuild the Codespace, run `npm run workshop-key` again: you get the same key, with no code. If you see `✗`, read the message, try again, or ask Will.
 
 ## The agent
 
